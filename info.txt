@@ -1,0 +1,5 @@
+typeorm migration:create -n name
+ts-node ./node_modules/typeorm/cli.js migration:run
+ts-node ./node_modules/typeorm/cli.js migration:revert
+ts-node ./node_modules/typeorm/cli.js schema:drop
+typeorm entity:create -n nombre
